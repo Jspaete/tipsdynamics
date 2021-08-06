@@ -14,7 +14,7 @@ How it works?:
     If you can't find it, you will find informations here: https://code.visualstudio.com/docs/editor/integrated-terminal 
     Then type into the terminal:
     - ipython or python3 -i
-    - run tipsdynamics.py
+    - run itpsdynamics.py
     Then you can start.
 Functions:
 -   overview(week)
@@ -70,13 +70,6 @@ class Tip():
             return 1
         else :
             return 0
-        
-
-    def save(self):
-        dill.dump(self, file = open(self.name+".pickle", "wb"))
-
-    def length(self):
-        return len(self.t)
 
 def overview(week):
     tips_container = load_w(week)
